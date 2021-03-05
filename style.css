@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 2vh;
+}
+
+body {
+    background-color: white;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+}
+
+.header {
+    padding-left:10rem;
+    padding-top: 2rem;
+    padding-right:5rem ;
+    padding-bottom: 2rem;
+    background-color: #F56C00;
+    color: white;
+}
+
+.footer {
+    padding-left:10rem;
+    padding-top: 2rem;
+    padding-right:5rem ;
+    padding-bottom: 2rem;
+    background-color: #edeef7;
+}
+
+.logo {
+    float: right;
+    height: 3rem;
+    padding-right: 5rem;
+}
+
+.main {
+    padding-left:10rem;
+    padding-top: 5rem;
+    padding-right:10rem ;
+    padding-bottom: 5rem;
+    display: flex;
+}
+
+.grid {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 100em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    align-items: start;
+}
+
+.grid-item {
+    background-color: whitesmoke;
+    border-radius: 0.3em;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.1%);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+}
+
+.card-desc {
+    padding: 3rem;
+}
+
+.card-label {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-info {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+.card-link {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #6C00F5;
+    background-color: #eddfff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.1s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-link span{
+    margin-left: 1rem;
+    transition: 0.1s;
+}
+
+.card-link:hover,
+.card-link:active {
+    background-color: #e0c9ff;
+}
+
+.card-link:hover span,
+.card-link:hover span{
+    margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 70em) {
+    .main {
+        padding: 4rem;
+    }
+
+    .grid {
+        grid-gap: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 2fr));
+    }
+
+
+}
+
+@media only screen and (max-width: 50em) {
+    .main {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+    }
+
+    .header {
+        padding-left:28%;
+        padding-top: 2rem;
+        padding-right:5rem ;
+        padding-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+    
+    .logo {
+        height: 3rem;
+        padding-right: 5rem;
+    }
+    .card-img{
+        height: 12rem;
+    }
+    .card-link{
+        font-size: 1.5rem;
+    }
+    .footer {
+        padding-left: 3rem;
+        font-size: 0.9rem;
+    }
+
+
+}
